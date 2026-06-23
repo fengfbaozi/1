@@ -1,0 +1,145 @@
+{
+  "project": {
+    "title": "玉林香料出口马来西亚数据可视化",
+    "subtitle": "商务大数据分析与决策课程项目 · 八角香料贸易专题",
+    "version": "1.0.0",
+    "description": "基于3D地球的玉林八角香料对马出口贸易数据可视化平台"
+  },
+  "panels": {
+    "left": [
+      {
+        "title": "玉林香料出口总额",
+        "value": "6.1 亿元",
+        "sub": "2024年全市香料进出口总额",
+        "shortLabel": "出口",
+        "icon": "./icons/icon_export.svg",
+        "chart": null
+      },
+      {
+        "title": "全国香料集散占比",
+        "value": "80%",
+        "sub": "年交易额约 300 亿元",
+        "shortLabel": "集散",
+        "icon": "./icons/icon_market.svg",
+        "chart": { "type": "ring", "percent": 80 }
+      },
+      {
+        "title": "八角对马出口占比",
+        "value": "65%+",
+        "sub": "香料对马总出口中八角占比",
+        "shortLabel": "八角",
+        "icon": "./icons/icon_certification.svg",
+        "chart": { "type": "ring", "percent": 65 }
+      }
+    ],
+    "right": [
+      {
+        "title": "进口关税编码",
+        "value": "HS09096110",
+        "sub": "八角干果进口税则号",
+        "shortLabel": "关税",
+        "icon": "./icons/icon_customs.svg",
+        "chart": null
+      },
+      {
+        "title": "清真认证要求",
+        "value": "JAKIM 强制",
+        "sub": "马来西亚进口必备认证",
+        "shortLabel": "清真",
+        "icon": "./icons/icon_certification.svg",
+        "chart": null
+      },
+      {
+        "title": "RCEP 关税减免",
+        "value": "原产地证",
+        "sub": "享受优惠税率降低成本",
+        "shortLabel": "RCEP",
+        "icon": "./icons/icon_logistics.svg",
+        "chart": null
+      }
+    ]
+  },
+  "cards": [
+    {
+      "title": "出口规模",
+      "summary": "玉林香料进出口总额6.1亿元，全国80%香料在玉林周转，年交易额约300亿元。八角对马出口占香料对马总出口的65%以上，是玉林香料出口的核心品类。",
+      "chart": {
+        "type": "bar",
+        "data": [
+          { "label": "2022", "value": 2700, "unit": "万元" },
+          { "label": "2023", "value": 38000, "unit": "万元" },
+          { "label": "2024", "value": 61000, "unit": "万元" }
+        ]
+      }
+    },
+    {
+      "title": "品类分布",
+      "summary": "玉林出口马来西亚的香料以八角为主，占比超过65%。其他重要品类包括桂皮、香叶、胡椒等。八角干果凭借独特风味和药用价值，在马来西亚市场备受青睐。",
+      "chart": {
+        "type": "pie",
+        "data": [
+          { "label": "八角", "value": 65, "color": "#ff568e" },
+          { "label": "桂皮", "value": 15, "color": "#ff9a56" },
+          { "label": "香叶", "value": 10, "color": "#56ff8e" },
+          { "label": "其他", "value": 10, "color": "#8e56ff" }
+        ]
+      }
+    },
+    {
+      "title": "市场分析",
+      "summary": "马来西亚是玉林八角的主要出口市场之一，年进口量持续增长。清真认证是进入马来西亚市场的关键门槛，JAKIM认证已成为强制要求。",
+      "chart": { "type": "ring", "percent": 85, "label": "市场份额" }
+    },
+    {
+      "title": "关税政策",
+      "summary": "八角干果进口关税编码为HS09096110。RCEP协定签署后，原产地证可享受优惠税率，有效降低出口成本，增强玉林八角在马来西亚市场的竞争力。",
+      "chart": {
+        "type": "flow",
+        "data": [
+          { "label": "RCEP", "value": 5 },
+          { "label": "最惠国", "value": 10 },
+          { "label": "普通", "value": 30 }
+        ],
+        "unit": "%"
+      }
+    },
+    {
+      "title": "物流路线",
+      "summary": "玉林八角出口马来西亚主要通过海运，经防城港、钦州港出发，抵达巴生港或槟城港。全程约需7-10天，物流成本相对较低。",
+      "chart": {
+        "type": "line",
+        "data": [
+          { "label": "玉林", "value": 0 },
+          { "label": "防城港", "value": 1 },
+          { "label": "新加坡", "value": 5 },
+          { "label": "巴生港", "value": 7 }
+        ],
+        "unit": "天"
+      }
+    },
+    {
+      "title": "发展趋势",
+      "summary": "随着RCEP生效和中马贸易深化，玉林八角出口马来西亚呈现良好增长态势。预计未来3年，出口额将保持年均15%以上的增速。",
+      "chart": {
+        "type": "bar",
+        "data": [
+          { "label": "2025E", "value": 70000, "unit": "万元" },
+          { "label": "2026E", "value": 80000, "unit": "万元" },
+          { "label": "2027E", "value": 92000, "unit": "万元" }
+        ]
+      }
+    }
+  ],
+  "globe": {
+    "spiceRoute": {
+      "from": "玉林",
+      "to": "吉隆坡",
+      "color": "#ffc850",
+      "stroke": 1.2
+    },
+    "highlightCities": [
+      { "name": "玉林", "label": "玉林 · 八角主产区" },
+      { "name": "吉隆坡", "label": "吉隆坡 · 核心市场" }
+    ]
+  }
+}
